@@ -295,3 +295,14 @@ function mouseClicked() {
     }
   
 }
+
+
+function windowResized() 
+{
+  w = windowWidth;
+  h = windowHeight;
+  netW = windowWidth * 0.7;
+  netH = windowHeight * 0.8;
+  resizeCanvas(w, h);
+  sandwichNet.changeNetSize(netW,netH);
+}
