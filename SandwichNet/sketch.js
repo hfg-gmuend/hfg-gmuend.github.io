@@ -72,7 +72,8 @@ function setup()
   frameRate(60);
   var gui = createGui('Neural Network Config');
   gui.addGlobals('inputNodes', 'hiddenNodes', 'outputNodes', 'learningRate');
-
+  gui.toggleCollapsed();
+  
   oldInputNodes = inputNodes;
   oldHiddenNodes = hiddenNodes;
   oldOutputNodes = outputNodes;
