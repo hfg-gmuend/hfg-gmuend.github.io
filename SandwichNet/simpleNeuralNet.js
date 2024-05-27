@@ -375,7 +375,7 @@ class SimpleNeuralNet
           let v = createVector();
           v.set(this.outputnodesPosition[o])
           v.sub(this.hiddenSigmoidPosition[h]);
-          v.mult(0.4);
+          v.mult(0.3);
           let weightPosition = createVector();
           weightPosition = v.add(this.hiddenSigmoidPosition[h]);
           this.weightsHiddenOutputPosition[h][o].set(weightPosition);
@@ -734,7 +734,6 @@ class SimpleNeuralNet
     function drawSandwichIngredient(pos,i)
     {
       let sandwichNet = this;
-      //let ingredient = ["Käse","Eierschalen","Matsch","Hühnchen","Erdnusbutter","Marmelade","Dünger","Grobe Mettwurst","Tonscherben","Majo","Salat",""]
       push();
       textAlign(RIGHT);
       noStroke();

@@ -30,6 +30,7 @@ var learningRateStep = 0.1;
 
 let level = 2;
 let bg = 0;
+let lang = 0;
 let oldInputNodes;
 let oldHiddenNodes;
 let oldOutputNodes;
@@ -50,10 +51,19 @@ function preload() {
   if(queryString)
   {
     const urlParams = new URLSearchParams(queryString);
-    level = urlParams.get('level')
+    level = urlParams.get('level');
     print("jump to Level " + level);
-    bg = urlParams.get('bg')
+    bg = urlParams.get('bg');
     print("set bg to " + bg);
+    lang = urlParams.get('lang');
+    if(lang == "de")
+    {
+      ingredientsList = ["Käse","Eierschalen","Matsch","Hühnchen","Erdnusbutter","Marmelade","Dünger","Grobe Mettwurst","Tonscherben","Majo","Salat",""]
+    }
+    if(lang == "en")
+    {
+      ingredientsList = ["Cheese", "Eggshells", "Mud", "Chicken", "PeanutButter", "Jam", "Fertilizer", "Sausage", "Clay", "Mayonnaise", "Salad",""]
+    }
   }
   else
   {
