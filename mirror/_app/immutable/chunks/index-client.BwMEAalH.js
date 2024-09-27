@@ -1,1 +1,0 @@
-import{h as e,e as u,i as t}from"./runtime.ClRJlCNk.js";function c(n){throw new Error("lifecycle_outside_component")}function i(n){e===null&&c(),e.l!==null?l(e).m.push(n):u(()=>{const o=t(n);if(typeof o=="function")return o})}function a(n){e===null&&c(),i(()=>()=>t(n))}function l(n){var o=n.l;return o.u??(o.u={a:[],b:[],m:[]})}export{a,i as o};

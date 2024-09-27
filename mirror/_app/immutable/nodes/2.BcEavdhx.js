@@ -1,1 +1,0 @@
-import{a as o,t as a}from"../chunks/disclose-version.DxMZbUI2.js";const r=!0,p=Object.freeze(Object.defineProperty({__proto__:null,prerender:r},Symbol.toStringTag,{value:"Module"}));var n=a("<section>asdsad</section>");function c(e){var t=n();o(e,t)}export{c as component,p as universal};
