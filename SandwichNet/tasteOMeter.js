@@ -17,8 +17,8 @@ class TasteOMeter
   update(newAplha){
     if(this.manualOutputValue == true)
     {
-       this.targetAlpha = this.value;
-       this.oldAlpha = newAplha;
+      this.targetAlpha = this.value;
+      this.oldAlpha = newAplha;
     }
     else
     {
